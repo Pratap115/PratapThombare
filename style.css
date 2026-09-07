@@ -1,81 +1,338 @@
+
+:root {
+  --bg: #0b0f14;
+  --surface: #111820;
+  --surface-light: #17212b;
+  --border: #263443;
+  --text: #e6edf3;
+  --muted: #8b9aaa;
+  --green: #3fb950;
+  --cyan: #58a6ff;
+  --purple: #bc8cff;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
 }
 
-header {
-    background: #0a192f;
-    color: white;
-    padding: 15px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: rgba(11, 15, 20, 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+.logo {
+  color: var(--green);
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.navbar nav {
+  display: flex;
+  gap: 24px;
 }
 
-section {
-    padding: 60px;
+.navbar nav a {
+  color: var(--muted);
+  font-size: 14px;
+  transition: color 0.2s;
 }
 
-#hero {
-    text-align: center;
-    background: #112240;
-    color: white;
-    padding: 100px;
+.navbar nav a:hover {
+  color: var(--cyan);
 }
 
-.profile-pic {
-    width: 180px;
-    border-radius: 50%;
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 8%;
+}
+
+.hero {
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--green);
+  font-family: monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  max-width: 520px;
+  color: var(--muted);
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .buttons {
-    margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.buttons a {
-    background: #64ffda;
-    color: black;
-    padding: 10px 18px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
+.btn.primary {
+  background: var(--green);
+  color: #07110a;
 }
 
-.project-card {
-    background: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
+.btn.primary:hover {
+  background: #56d364;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn.secondary:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.terminal {
+  background: #0d1117;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-header {
+  display: flex;
+  gap: 8px;
+  padding: 14px 18px;
+  background: #161b22;
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-header span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #30363d;
+}
+
+.terminal-body {
+  padding: 24px;
+  font-family: monospace;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.terminal-body p {
+  margin-bottom: 14px;
+}
+
+.prompt {
+  color: var(--green);
+  margin-right: 8px;
+}
+
+.terminal-output {
+  color: var(--text);
+}
+
+.terminal pre {
+  color: var(--cyan);
+  white-space: pre-wrap;
+  margin-bottom: 18px;
+}
+
+.success {
+  color: var(--green);
+}
+
+.skills-grid,
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.skill-card,
+.certification-card,
+.education-card,
+.experience-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.2s;
+}
+
+.skill-card:hover,
+.certification-card:hover,
+.experience-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-3px);
+}
+
+.skill-card h3 {
+  color: var(--cyan);
+}
+
+.skill-card p,
+.certification-card p,
+.education-card p,
+.location {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.experience-top > span {
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.company {
+  color: var(--cyan);
+  font-size: 15px;
+}
+
+.experience-card ul {
+  margin-top: 18px;
+  padding-left: 20px;
+}
+
+.experience-card li {
+  color: var(--muted);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.certification-card h3 {
+  color: var(--text);
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section h2 {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.contact-section .buttons {
+  justify-content: center;
 }
 
 footer {
-    background: #0a192f;
-    color: white;
-    text-align: center;
-    padding: 15px;
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 5%;
+  }
+
+  .navbar nav {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+  }
+
+  .section {
+    padding: 70px 5%;
+  }
+
+  .skills-grid,
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-top {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .experience-top > span {
+    white-space: normal;
+  }
 }

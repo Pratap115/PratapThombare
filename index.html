@@ -1,225 +1,278 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratap Thombare | Cloud & DevOps Architect</title>
-
-    style.css
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratap Thombare | Cloud & DevOps Specialist</title>
+  <meta
+    name="description"
+    content="Pratap Thombare - Cloud & DevOps Specialist, SRE, Kubernetes and Linux Engineer."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header class="navbar">
+    <a href="#about" class="logo">&lt;PratapThombare /&gt;</a>
 
-    <header>
-        <nav>
-            <h2>Pratap Thombare</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
 
-            <ul>
-                <li>#aboutAbout</a></li>
-                <li><a href="#skills">Skills</a></li>
-     <li>#projectsProjects</a></li>
-                <li>#experienceExperience</a></li>
-                <li><contactContact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Cloud & DevOps Specialist | SRE</p>
 
-    <section id="hero">
+        <h1>Pratap Thombare</h1>
 
-        <img src="assets/profile.jpg<h1>Pratap Sahebrao Thombare</h1>
-
-        <h3>Specialist - Architecture</h3>
-
-        <p>
-            Azure Cloud | Terraform | AKS | Kubernetes | DevOps | CI/CD | SRE
+        <p class="hero-description">
+          7+ years of experience building reliable infrastructure,
+          automating operations, and supporting cloud-native platforms.
         </p>
 
         <div class="buttons">
-            <a href="sume.pdf
-                Download Resume
-            </a>
+          <a class="btn primary" href="assets/resume.pdf" download>
+            Download Resume
+          </a>
 
-            <a href="https://www.linkedin.com/in/pratap-thombare/" target="_blank">
-                LinkedIn
-            </a>
+          <a class="btn secondary" href="mailto:thombarepratap115@gmail.com">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-header">
+          <span></span><span></span><span></span>
         </div>
 
+        <div class="terminal-body">
+          <p><span class="prompt">➜</span> whoami</p>
+          <p class="terminal-output">Pratap Thombare [Cloud & DevOps Engineer]</p>
+
+          <p><span class="prompt">➜</span> cat current_stack.json</p>
+
+          <pre>{
+  "core": ["Kubernetes", "Linux", "SRE"],
+  "cloud": ["Azure", "AWS", "GCP"],
+  "automation": ["Terraform", "Ansible", "Bash"],
+  "devops": ["Azure DevOps", "Jenkins", "GitHub Actions"],
+  "observability": ["Prometheus", "Grafana", "ELK"]
+}</pre>
+
+          <p><span class="prompt">➜</span> status</p>
+          <p class="success">✔ Building Reliable Infrastructure</p>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <p class="section-label">Technical Arsenal</p>
+      <h2>Tools & Technologies</h2>
 
-        <h2>About Me</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Cloud & DevOps</h3>
+          <p>Azure · AWS · GCP · Terraform · Ansible · Jenkins · GitHub Actions · Azure DevOps</p>
+        </div>
 
-        <p>
-            I am an experienced Cloud and DevOps professional with more than 7 years
-            of experience in designing, deploying and supporting enterprise cloud
-            platforms.
+        <div class="skill-card">
+          <h3>Kubernetes & Containers</h3>
+          <p>Docker · Kubernetes · OpenShift · Helm · Istio · CRI-O</p>
+        </div>
 
-            My expertise includes Azure Cloud, Kubernetes (AKS), Terraform,
-            GitHub Actions, Azure DevOps, Monitoring, Automation and SRE practices.
+        <div class="skill-card">
+          <h3>Linux & Infrastructure</h3>
+          <p>RHEL · Ubuntu · CentOS · VMware · KVM · vSphere · Networking</p>
+        </div>
 
-            I have worked extensively on infrastructure automation,
-            cloud modernization, CI/CD implementations and Production Support.
-        </p>
+        <div class="skill-card">
+          <h3>SRE & Observability</h3>
+          <p>Prometheus · Grafana · Azure Monitor · ELK · Incident Management · RCA</p>
+        </div>
 
+        <div class="skill-card">
+          <h3>Storage & Backup</h3>
+          <p>Ceph · Commvault · SAN · LVM · NFS · SMB · Azure Storage</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Databases & Services</h3>
+          <p>MySQL · MariaDB · MongoDB · Redis · Nginx · Apache</p>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <p class="section-label">Professional Journey</p>
+      <h2>Experience</h2>
 
-        <h2>Skills</h2>
+      <div class="timeline">
 
-        <div class="skills-container">
-
+        <article class="experience-card">
+          <div class="experience-top">
             <div>
-                <h3>Cloud</h3>
-                <ul>
-                    <li>Azure</li>
-                    <li>AWS</li>
-                    <li>GCP</li>
-                </ul>
+              <h3>Specialist Architecture</h3>
+              <p class="company">LTM</p>
             </div>
+            <span>Nov 2025 – Present</span>
+          </div>
 
+          <p class="location">Pune, India</p>
+
+          <ul>
+            <li>Design and maintain CI/CD pipelines using Azure DevOps, Jenkins, GitOps, and GitHub Actions.</li>
+            <li>Manage Kubernetes clusters on Azure Kubernetes Service (AKS).</li>
+            <li>Work with Istio service mesh, traffic management, and mTLS.</li>
+            <li>Automate infrastructure provisioning using Terraform.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-top">
             <div>
-                <h3>Containers</h3>
-                <ul>
-                    <li>Kubernetes</li>
-                    <li>AKS</li>
-                    <li>Docker</li>
-                    <li>Helm</li>
-                </ul>
+              <h3>Technical and Business Operations Analyst</h3>
+              <p class="company">Amdocs</p>
             </div>
+            <span>Nov 2022 – Nov 2025</span>
+          </div>
 
+          <p class="location">Pune, India</p>
+
+          <ul>
+            <li>Managed and troubleshot Linux and Unix infrastructure.</li>
+            <li>Led major incident management and ITSM processes.</li>
+            <li>Worked with AWS, Azure, Kubernetes, OpenShift, Jenkins, Terraform, and Ansible.</li>
+            <li>Implemented monitoring, backup, and disaster recovery solutions.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-top">
             <div>
-                <h3>Infrastructure as Code</h3>
-                <ul>
-                    <li>Terraform</li>
-                    <li>Bicep</li>
-                    <li>ARM Templates</li>
-                </ul>
+              <h3>TechOps Engineer</h3>
+              <p class="company">Infosec Ventures Pvt. Ltd.</p>
             </div>
+            <span>Aug 2021 – Nov 2022</span>
+          </div>
 
+          <p class="location">Gurgaon, India</p>
+
+          <ul>
+            <li>Managed 500+ Linux servers.</li>
+            <li>Executed VMware-to-Azure migration.</li>
+            <li>Automated routine tasks using Ansible and Bash.</li>
+            <li>Supported KVM, Linux networking, high availability, and production troubleshooting.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-top">
             <div>
-                <h3>CI/CD</h3>
-                <ul>
-                    <li>Azure DevOps</li>
-                    <li>GitHub Actions</li>
-                    <li>Jenkins</li>
-                </ul>
+              <h3>Assistant Project Manager</h3>
+              <p class="company">Omnion Premedia Pvt. Ltd.</p>
             </div>
+            <span>Jun 2019 – Jul 2021</span>
+          </div>
 
-            <div>
-                <h3>Monitoring</h3>
-                <ul>
-                    <li>Grafana</li>
-                    <li>Prometheus</li>
-                    <li>ELK</li>
-                    <li>Azure Monitor</li>
-                </ul>
-            </div>
+          <p class="location">Udupi, India</p>
 
-        </div>
+          <ul>
+            <li>Deployed Kubernetes and Ceph clusters.</li>
+            <li>Managed Linux infrastructure and data center operations.</li>
+            <li>Worked with CephFS, storage, virtualization, and cloud infrastructure.</li>
+          </ul>
+        </article>
 
+      </div>
     </section>
 
-    <section id="projects">
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <p class="section-label">Professional Development</p>
+      <h2>Certifications</h2>
 
-        <h2>Featured Projects</h2>
-
-        <div class="project-card">
-
-            <h3>Azure VM Provisioning with Terraform</h3>
-
-            <p>
-                Developed reusable Terraform modules for Azure Virtual Machine
-                deployment across multiple environments and regions.
-            </p>
-
+      <div class="certifications-grid">
+        <div class="certification-card">
+          <h3>Certified Kubernetes Administrator</h3>
+          <p>CKA</p>
         </div>
 
-        <div class="project-card">
-
-            <h3>AKS Platform Deployment</h3>
-
-            <p>
-                Automated Kubernetes cluster deployment using Terraform
-                and GitHub Actions.
-            </p>
-
+        <div class="certification-card">
+          <h3>ITIL 4 Foundation</h3>
+          <p>ITIL v4</p>
         </div>
 
-        <div class="project-card">
-
-            <h3>CI/CD Framework</h3>
-
-            <p>
-                Implemented enterprise-grade CI/CD pipelines for application
-                deployments across Dev, QA and Production environments.
-            </p>
-
+        <div class="certification-card">
+          <h3>OpenShift for Developers</h3>
+          <p>OpenShift 4</p>
         </div>
 
-        <div class="project-card">
-
-            <h3>Observability Platform</h3>
-
-            <p>
-                Centralized monitoring using Prometheus, Grafana and ELK for
-                performance visibility and alerting.
-            </p>
-
+        <div class="certification-card">
+          <h3>GCP Fundamentals</h3>
+          <p>Core Infrastructure</p>
         </div>
 
+        <div class="certification-card">
+          <h3>AWS Fundamentals</h3>
+          <p>Specialization</p>
+        </div>
+
+        <div class="certification-card">
+          <h3>Google IT Support</h3>
+          <p>Professional Certificate</p>
+        </div>
+      </div>
     </section>
 
-    <section id="experience">
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <p class="section-label">Academic Background</p>
+      <h2>Education</h2>
 
-        <h2>Professional Experience</h2>
-
-        <div class="timeline">
-
-            <h3>Specialist - Architecture</h3>
-
-            <ul>
-                <li>Azure Infrastructure Design</li>
-                <li>AKS Architecture Implementation</li>
-                <li>Terraform Module Development</li>
-                <li>Cloud Governance</li>
-                <li>Production Support Leadership</li>
-                <li>CI/CD Framework Design</li>
-            </ul>
-
-        </div>
-
+      <div class="education-card">
+        <h3>Bachelor of Engineering</h3>
+        <p>University of Pune</p>
+        <p>2015 – 2019 · 8.46 CGPA</p>
+      </div>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT -->
+    <section class="section contact-section">
+      <p class="section-label">Let's Connect</p>
+      <h2>Building reliable systems, one deployment at a time.</h2>
 
-        <h2>Contact</h2>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:thombarepratap115@gmail.com">
+          Email Me
+        </a>
 
-        <p>Email : your-email@gmail.com</p>
-
-        <p>Pune, Maharashtra, India</p>
-
-        <p>
-            LinkedIn :
-            <a href="https://www.linkedin.com/in/pratap-thombare/">
-                Pratap Thombare
-            </a>
-        </p>
-
+        <a
+          class="btn secondary"
+          href="https://www.linkedin.com/in/pratap-thombare/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+      </div>
     </section>
+  </main>
 
-    <footer>
+  <footer>
+    <p>Designed & Built by Pratap Thombare</p>
+  </footer>
 
-        <p>
-            © 2026 Pratap Thombare
-        </p>
-
-    </footer>
-
-    script.jsscript>
-
+  <script src="script.js"></script>
 </body>
-
 </html>

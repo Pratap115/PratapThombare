@@ -1,17 +1,15 @@
-console.log("Portfolio Loaded Successfully");
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
 
-    anchor.addEventListener("click", function(e) {
+    const target = document.querySelector(link.getAttribute("href"));
 
-        e.preventDefault();
-
-        document.querySelector(
-            this.getAttribute("href")
-        ).scrollIntoView({
-            behavior: "smooth"
-        });
-
-    });
-
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
 });
